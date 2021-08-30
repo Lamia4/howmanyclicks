@@ -64,7 +64,7 @@ main {
   display: flex;
   flex-direction: column;
   height: 82vh;
-  background-color: rgb(51, 12, 12);
+  background-color: black;
   color: white;
   font-size: 20px;
   padding: 30px;
