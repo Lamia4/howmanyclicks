@@ -1,112 +1,116 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.container {
-    height: 100vh;
+header ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 24px;
 }
 
-ul {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-size: 24px;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+header ul li {
+  float: left;
+}
+header ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  background-color: #111;
+}
 
 header {
-
-    display:flex;
-    justify-content: space-between;
-    height: 6vh;
-    background-color: rgb(136, 73, 73);
+  display: flex;
+  justify-content: space-between;
+  height: 6vh;
+  background-color: purple;
 }
 
 img {
-    height: 6vh;
+  height: 6vh;
 }
 
 .login {
-    display:flex;
-    align-items: center;
-    height: 6vh;
+  display: flex;
+  align-items: center;
+  height: 6vh;
 }
 
 .login button {
-    width: 5vw;
-    height: 4vh;
-    border-radius: 5px;
-    margin-right: 20px;
+  width: 5vw;
+  height: 4vh;
+  border-radius: 5px;
+  margin-right: 20px;
 }
 
 .login button:hover {
-    background-color:rosybrown;
-    cursor: pointer;
+  background-color: rosybrown;
+  cursor: pointer;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    height: 84vh;
-    background-color: rgb(51, 12, 12);
-    color: white;
-    font-size: 20px;
-    padding: 30px;
-    line-height: 4vh;
-    font-family:'Courier New', Courier, monospace
+  display: flex;
+  flex-direction: column;
+  height: 82vh;
+  background-color: rgb(51, 12, 12);
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+  line-height: 4vh;
+  font-family: "Courier New", Courier, monospace;
 }
 
 main h1 {
-    margin: 20px 170px;
+  margin: 20px 170px;
 }
 
 main img {
-    height: 66%;
-    width: 80%;
-    margin: 0 auto;
-}
-
-footer {
-    background-color: black;
-    height: 10vh;
+  margin: 0 auto;
+  width: 60vw;
+  height: 40vh;
 }
 
 main p {
-    margin: 10px 150px 30px 170px;
+  margin: 10px 150px 30px 170px;
 }
 
 main a {
-    color: white;
-    text-decoration: none;
-    align-self: flex-end;
-    margin-top: 10px;
-    margin-right: 180px;
+  color: white;
+  text-decoration: none;
+  align-self: flex-end;
+  margin-top: 10px;
+  margin-right: 30px;
 }
 
-main a:hover{
-
-    color: yellow;
+main a:hover {
+  color: yellow;
 }
 
+footer {
+  height: 12vh;
+  color: black;
+  display: flex;
+  background-color: yellow;
+  justify-content: space-evenly;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  line-height: 22px;
+}
