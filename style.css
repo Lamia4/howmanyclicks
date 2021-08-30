@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+}
+
+ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 24px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+header {
+
+    display:flex;
+    justify-content: space-between;
+    height: 6vh;
+    background-color: rgb(136, 73, 73);
+}
+
+img {
+    height: 6vh;
+}
+
+.login {
+    display:flex;
+    align-items: center;
+    height: 6vh;
+}
+
+.login button {
+    width: 5vw;
+    height: 4vh;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.login button:hover {
+    background-color:rosybrown;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 87vh;
+    background-color: rgb(51, 12, 12);
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    line-height: 4vh;
+    font-family:'Courier New', Courier, monospace
+}
+
+main h1 {
+    margin: 20px 170px;
+}
+
+main img {
+    height: 60%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: black;
+    height: 15vh;
+}
+
+main p {
+    margin: 10px 150px 30px 170px;
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 180px;
+}
+
+main a:hover{
+
+    color: yellow;
+}
+
