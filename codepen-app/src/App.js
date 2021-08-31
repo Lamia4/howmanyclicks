@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Errors from "./pages/Errors";
 import { useState } from 'react';
+import NoExist from "./pages/NoExist.js";
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route exact path="/" > <Home homeLinks={homeLinks} /> </Route >
           <Route path="/login"> <Login /> </Route>
           <Route path="/errors" > <Errors /> </Route>
+          <Route component={NoExist}></Route>
 
         </Switch>
       </BrowserRouter>
