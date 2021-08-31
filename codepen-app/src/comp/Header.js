@@ -5,16 +5,26 @@ import "./Header.css";
 
 function Header() {
     return (
-        <div>
-            <Link to="/" >  <h1 className="mainHeader" >CodePen Fun Club</h1> </Link>
+        <div className="container">
+            <div className="logo">
+                <img
+                src="https://www.logaster.ru/blog/wp-content/uploads/2018/11/logo-animation3.gif"
+                alt="bcycle"
+                />
+            </div>
 
             <ul>
-                <Link to="/" > <li>Home</li></Link>
-                <Link to="/login" > <li>Login</li></Link>
-                <Link to="/errors" > <li>Errors</li></Link>
+                <li><Link to="/" >Home</Link></li>
+                <li><Link to="/login" >Login</Link></li>
+                <li><Link to="/errors" >Errors</Link></li>
 
             </ul>
+
+            <div className="login">
+                <button>login</button>
+            </div>
         </div>
+        
     )
 }
 
