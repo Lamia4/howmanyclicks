@@ -1,49 +1,30 @@
 import React from 'react'
+import NewLink from "../comp/NewLink.js"
 
-function Home() {
+function Home({ homeLinks }) {
+
+
+
     return (
         <div>
+
+            <NewLink />
+
             <main>
-                <h1>Codepen</h1>
-                <p>
-                    CodePen is a social development environment. At its heart, it allows
-                    you to write code in the browser, and see the results of it as you
-                    build. A useful and liberating online code editor for developers of
-                    any skill, and particularly empowering for people learning to code. We
-                    focus primarily on front-end languages like HTML, CSS, JavaScript, and
-                    preprocessing syntaxes that turn into those things.
-                </p>
-                <img src="/codepen.png" alt="codepen-screenshot" />
-                <a href="https://codepen.io/">Link to Codepen</a>
-                <hr />
-                <h1>Codepen</h1>
-                <p>
-                    CodePen is a social development environment. At its heart, it allows
-                    you to write code in the browser, and see the results of it as you
-                    build. A useful and liberating online code editor for developers of
-                    any skill, and particularly empowering for people learning to code. We
-                    focus primarily on front-end languages like HTML, CSS, JavaScript, and
-                    preprocessing syntaxes that turn into those things.
-                </p>
-                <img src="/codepen.png" alt="codepen-screenshot" />
-                <a href="https://codepen.io/">Link to Codepen</a>
-                <hr />
-                <h1>Codepen</h1>
-                <p>
-                    CodePen is a social development environment. At its heart, it allows
-                    you to write code in the browser, and see the results of it as you
-                    build. A useful and liberating online code editor for developers of
-                    any skill, and particularly empowering for people learning to code. We
-                    focus primarily on front-end languages like HTML, CSS, JavaScript, and
-                    preprocessing syntaxes that turn into those things.
-                </p>
-                <img src="/codepen.png" alt="codepen-screenshot" />
-                <a href="https://codepen.io/">Link to Codepen</a>
+                {homeLinks.map(value => {
+                    return <div className="links">
+                        <h1> {value.title} </h1>
+                        <p>
+                            {value.text}
+                        </p>
+                        <img src={value.imgUrl} alt="codepen-screenshot" />
+                        <a href={value.link} >Link to {value.title} </a>
+                        <hr />
+                    </div>
+                })}
             </main>
 
-            <div className="urlserach">
-                <input type="text" placeholder="cafer" />
-            </div>
+
         </div>
     )
 }
