@@ -1,6 +1,3 @@
-
-import './App.css';
-
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Header from "./comp/Header"

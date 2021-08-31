@@ -4,7 +4,7 @@ import "./NewLink.css"
 function NewLink() {
     return (
         <div>
-            <form className="container">
+            <form className="containerLink">
 
                 <h3>Add a new link</h3>
                 <br />
