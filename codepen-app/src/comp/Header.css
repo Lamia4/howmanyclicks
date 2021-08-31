@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: turquoise;
+    height: 10vh;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+
+
+li{
+    color: black;
+    font-size: 30px;
+}
+
+
+
+
+
+.mainHeader{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 8vh;
+    line-height: 90px;
+    font-size: 80px;
+    
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
