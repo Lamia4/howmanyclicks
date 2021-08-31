@@ -10,6 +10,10 @@ import { useState } from 'react';
 function App() {
 
 
+ 
+ 
+
+
   const [homeLinks, setHomeLinks] = useState([
     {
       title: "CodePen",
@@ -29,6 +33,7 @@ function App() {
       imgUrl: "https://www.schweitzer-projects.de/images/Inhalte/aktuell/amazon-de.jpg",
       link: "https://www.amazon.de/"
     }
+
   ])
 
 

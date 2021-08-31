@@ -31,10 +31,17 @@ textarea {
   background-color: #45a049;
 }
 
+.allNewContainer {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
 .containerLink {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  width: 75%;
 }
 
 .col-25 {

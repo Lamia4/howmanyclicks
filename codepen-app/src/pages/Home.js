@@ -1,16 +1,24 @@
-import React from 'react'
-import NewLink from "../comp/NewLink.js"
+import React, { useState } from 'react'
+import NewLink from "../comp/NewLink.js";
+
+import "./Home.css"
 
 function Home({ homeLinks }) {
+
+
+    const [linkTitle, setLinkTitle] = useState("")
+    const [linkExp, setLinkExp] = useState("")
+    const [linkImgUrl, setLinkImgUrl] = useState("")
+    const [webSiteLink, setWebSiteLink] = useState("")
 
 
 
     return (
         <div>
 
-            <NewLink />
+            <NewLink linkTitle={linkTitle} linkExp={linkExp} />
 
-            <main>
+            <main className="allLinks" >
                 {homeLinks.map(value => {
                     return <div className="links">
                         <h1> {value.title} </h1>
@@ -19,7 +27,7 @@ function Home({ homeLinks }) {
                         </p>
                         <img src={value.imgUrl} alt="codepen-screenshot" />
                         <a href={value.link} >Link to {value.title} </a>
-                        <hr />
+
                     </div>
                 })}
             </main>

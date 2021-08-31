@@ -1,0 +1,27 @@
+.allLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: 5px solid black;
+  height: 300px;
+  width: 400px;
+  color: black;
+}
+
+.links img {
+  height: 40%;
+  width: 50%;
+}
+
+.links * {
+  padding: 10px;
+}
