@@ -112,7 +112,7 @@ main a:hover {
 
 footer {
   height: 13vh;
-  color: black;
+  color: white;
   display: flex;
   background-color: black;
   flex-direction: row;
