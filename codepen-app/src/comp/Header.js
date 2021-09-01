@@ -8,15 +8,15 @@ function Header() {
         <div className="container">
             <div className="logo">
                 <img
-                src="https://www.logaster.ru/blog/wp-content/uploads/2018/11/logo-animation3.gif"
-                alt="bcycle"
+                    src="https://www.logaster.ru/blog/wp-content/uploads/2018/11/logo-animation3.gif"
+                    alt="bcycle"
                 />
             </div>
 
             <ul>
                 <li><Link to="/" >Home</Link></li>
                 <li><Link to="/login" >Login</Link></li>
-                <li><Link to="/errors" >Errors</Link></li>
+                <li><Link to="/contact" >Contact</Link></li>
 
             </ul>
 
@@ -24,7 +24,7 @@ function Header() {
                 <button>login</button>
             </div>
         </div>
-        
+
     )
 }
 

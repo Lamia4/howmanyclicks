@@ -1,18 +1,18 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { useState } from 'react';
 
 import Header from "./comp/Header"
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Errors from "./pages/Errors";
-import { useState } from 'react';
 import NoExist from "./pages/NoExist.js";
+import Contact from "./pages/Contact";
 
 
 function App() {
 
 
- 
- 
+
+
 
 
   const [homeLinks, setHomeLinks] = useState([
@@ -45,7 +45,7 @@ function App() {
         <Switch>
           <Route exact path="/" > <Home homeLinks={homeLinks} /> </Route >
           <Route path="/login"> <Login /> </Route>
-          <Route path="/errors" > <Errors /> </Route>
+          <Route path="/contact" > <Contact /> </Route>
           <Route component={NoExist}></Route>
 
         </Switch>
