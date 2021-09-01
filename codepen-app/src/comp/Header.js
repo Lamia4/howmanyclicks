@@ -15,13 +15,13 @@ function Header() {
 
             <ul>
                 <li><Link to="/" >Home</Link></li>
-                <li><Link to="/login" >Login</Link></li>
+                <li><Link to="/about" >About</Link></li>
                 <li><Link to="/contact" >Contact</Link></li>
 
             </ul>
 
             <div className="login">
-                <button>login</button>
+                <Link to="/login" ><button > Login </button></Link>
             </div>
         </div>
 

@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import Header from "./comp/Header"
 import Home from "./pages/Home";
+import About from "./pages/About"
 import Login from "./pages/Login";
 import NoExist from "./pages/NoExist.js";
 import Contact from "./pages/Contact";
@@ -45,6 +46,7 @@ function App() {
         <Switch>
           <Route exact path="/" > <Home homeLinks={homeLinks} /> </Route >
           <Route path="/login"> <Login /> </Route>
+          <Route path="/about"> <About /> </Route>
           <Route path="/contact" > <Contact /> </Route>
           <Route component={NoExist}></Route>
 
