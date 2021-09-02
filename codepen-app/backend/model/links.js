@@ -29,8 +29,14 @@ async function createLink (title, text, imgUrl, link) {
 	console.log("before save");
     console.log(linkResult);
 	return await linkResult.save();
-}
+};
+
+async function readAll () {
+    
+	return await Link.find();
+};
 
 export default {
-    createLink
+    createLink,
+    readAll
 }
