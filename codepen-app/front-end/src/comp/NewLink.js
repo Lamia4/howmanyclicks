@@ -26,7 +26,7 @@ function NewLink({ newLinksForm, setNewLinksForm, homeLinks, setHomeLinks }) {
 
                 <div className="row">
                     <div className="col-25">
-                        <label for="fname">Title</label>
+                        <label >Title</label>
                     </div>
                     <div className="col-75">
                         <input type="text" placeholder="What is the name of the website?" value={newLinksForm.title} onChange={(e) => setNewLinksForm({ ...newLinksForm, title: e.target.value })} />
@@ -35,7 +35,7 @@ function NewLink({ newLinksForm, setNewLinksForm, homeLinks, setHomeLinks }) {
 
                 <div className="row">
                     <div className="col-25">
-                        <label for="lname">Explanation</label>
+                        <label >Explanation</label>
                     </div>
                     <div className="col-75">
                         <input type="text" placeholder="Can you explain this website to me a little bit?" value={newLinksForm.text} onChange={(e) => setNewLinksForm({ ...newLinksForm, text: e.target.value })} />
