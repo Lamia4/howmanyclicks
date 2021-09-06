@@ -10,6 +10,8 @@ function NewLink({ newLinksForm, setNewLinksForm, homeLinks, setHomeLinks }) {
 
         setHomeLinks([...homeLinks, newLinksForm]);
 
+        console.log(newLinksForm);
+
         localStorage.setItem("ourLinks", JSON.stringify(homeLinks.map(value => value)));
 
 

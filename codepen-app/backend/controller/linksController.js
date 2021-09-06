@@ -8,6 +8,7 @@ export default {
         const result = await Link.createLink(
             req.body.title,
             req.body.text,
+            req.body.imgUrl,
             req.body.link
         );
         res.json(result);
