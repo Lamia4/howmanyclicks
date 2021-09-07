@@ -12,7 +12,15 @@ function NewLink({ newLinksForm, setNewLinksForm, homeLinks, setHomeLinks }) {
 
         console.log(newLinksForm);
 
-        localStorage.setItem("ourLinks", JSON.stringify(homeLinks.map(value => value)));
+        // localStorage.setItem("ourLinks", JSON.stringify(homeLinks.map(value => value)));
+
+        // fetch('https://jsonplaceholder.typicode.com/posts', {
+        // method: 'POST',
+        // body: '', // The data
+        // headers: {
+        // 'Content-type': '' // The type of data you're sending
+        // }
+        // }); 
 
 
     }

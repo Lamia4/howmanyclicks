@@ -2,7 +2,8 @@ import express from "express";
 import dotenv from "dotenv";
 import database from "./lib/database.js";
 import linksRouter from "./router/linksRouter.js";
-import cors from "cors"
+import cors from "cors";
+import loginRouter from "./router/loginRouter.js";
 dotenv.config();
 
 const server = express();
@@ -25,6 +26,7 @@ server.use(express.urlencoded({ extended: true }));
 // })
 
 server.use("/links", linksRouter);
+server.use("/login", loginRouter);
 
 
 
