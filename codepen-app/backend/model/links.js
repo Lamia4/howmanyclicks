@@ -13,6 +13,10 @@ const linksSchema = mongoose.Schema({
     },
     link: {
         type: String,
+    },
+    count: {
+        type: Number,
+        default: 0
     }
 });
 
@@ -36,7 +40,18 @@ async function readAll () {
 	return await Link.find();
 };
 
+async function findLink (title) {
+    
+    
+    const findLink = await Link.findOne({title});
+    findLink.count++;
+    await findLink.save();
+	return findLink; //true
+};
+
+
 export default {
     createLink,
-    readAll
+    readAll,
+    findLink
 }

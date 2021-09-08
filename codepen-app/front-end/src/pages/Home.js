@@ -51,7 +51,7 @@ function Home() {
                             {value.text}
                         </p>
                         <img src={value.imgUrl} alt="codepen-screenshot" />
-                        <a href={value.link} >Link to {value.title} </a>
+                        <a href={`http://localhost:3435/links/${value.title}`} target="_blank">Link to {value.title} {value.count} </a>
 
                     </div>
                 })}
