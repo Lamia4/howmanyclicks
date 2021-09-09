@@ -8,9 +8,16 @@ function NewLink({ newLinksForm, setNewLinksForm, homeLinks, setHomeLinks }) {
 
         e.preventDefault();
 
-        setHomeLinks([...homeLinks, newLinksForm]);
-
-        console.log(newLinksForm);
+        
+            fetch('http://localhost:3435/links', {
+            method: 'POST',
+            body: JSON.stringify(newLinksForm),
+            headers: {
+            'Content-type': "application/json"// The type of data you're sending
+            }
+            }); 
+            
+    
 
         // localStorage.setItem("ourLinks", JSON.stringify(homeLinks.map(value => value)));
 

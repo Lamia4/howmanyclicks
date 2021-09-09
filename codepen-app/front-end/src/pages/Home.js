@@ -23,8 +23,9 @@ function Home() {
 
             console.log(error);
         });
-    }, [])
+    }, [homeLinks]);
 
+    
 
 
     const [newLinksForm, setNewLinksForm] = useState(
@@ -51,7 +52,8 @@ function Home() {
                             {value.text}
                         </p>
                         <img src={value.imgUrl} alt="codepen-screenshot" />
-                        <a href={`http://localhost:3435/links/${value.title}`} target="_blank">Link to {value.title} {value.count} </a>
+                        <a href={`http://localhost:3435/links/${value.title}`} target="_blank">Link to {value.title}  </a> 
+
 
                     </div>
                 })}
