@@ -44,6 +44,8 @@ async function findLink (title) {
     
     
     const findLink = await Link.findOne({title});
+    console.log(title);
+    if (findLink == null) return false;
     findLink.count++;
     await findLink.save();
 	return findLink; //true
