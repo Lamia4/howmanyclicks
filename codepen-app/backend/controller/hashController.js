@@ -5,9 +5,12 @@ export default {
 
     read: async function (req, res, next) {
         
-        console.log(req.params.linkTitle);
-        console.log("es funktioniert");
-        const result = await Link.findLink(req.params.linkTitle);
+        const linkTitle = req.params.linkTitle;
+        console.log("hier ist der titel",linkTitle);
+        const result= await Link.findLink(linkTitle);
+        // .then((result) => res.redirect(result.link))
+        console.log(result);
+        // res.send(result);
         res.redirect(result.link)
     },
 }
