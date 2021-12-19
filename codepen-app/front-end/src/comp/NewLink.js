@@ -37,7 +37,7 @@ function NewLink({ newLinksForm, setNewLinksForm, homeLinks, setHomeLinks }) {
         <div className="allNewContainer" >
             <form className="containerLink" onSubmit={newLinksAddFunc} >
 
-                <h3>Add a new link</h3>
+                <h3>Add new link</h3>
                 <br />
 
 
